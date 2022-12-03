@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color1: 0x91439,
+        color2: 0x223e8c,
+        wingSpan: 40.00,
+        Separation: 100.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+        quantity: 1.00
+
+      })
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+
+  </script>
+
+  <title>Felipe Ortiz Lucas - Links</title>
+</head>
+
+<body>
+  <!-- <video autoplay muted loop playsinline>
+    <source src="./images/bg.m4v" type="video/mp4;codecs=hvc1">
+    <source src="./images/bg.webm" type="video/webm; codecs=vp9">
+  </video> -->
+  <div id="vanta"></div>
+  <main>
+    <header>
+      <img src="./images/perfil.jpg" alt="">
+      <h1>@felipeortizlucas</h1>
+    </header>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/felipeortizlucas/">
+          <img src="./images/linkedin.svg" alt="linkedin" width="20">Linkedin</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/lfelipeortizl">
+          <img src="./images/twitter.svg" alt="twitter" width="20">Twitter</a>
+      </li>
+      <li>
+        <a href="https://github.com/felipeortizlucas">
+          <img src="./images/github.svg" alt="github" width="20">Github</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/pipe_lucas/">
+          <img src="./images/instagram.svg" alt="instagram" width="20">Instagram</a>
+      </li>
+
+    </ul>
+  </main>
+</body>
+
+</html>
